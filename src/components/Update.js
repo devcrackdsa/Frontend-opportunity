@@ -41,7 +41,7 @@ const Update = ({ data, token, uptodate, id, setpop }) => {
       form.set(
         "requirements",
         typeof requirements === "string"
-          ? requirements.split("\n")
+          ? requirements.split(",")
           : requirements
       );
       form.set("tags", tags);

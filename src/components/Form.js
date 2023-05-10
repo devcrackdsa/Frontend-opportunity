@@ -46,7 +46,7 @@ const Form = () => {
     let form = new FormData(document.getElementById("form"));
     form.set("live", live);
     form.set("exclusive", exclusive);
-    form.set("requirements", data.requirements.split("\n"));
+    form.set("requirements", data.requirements.split(","));
     form.set("tags", data.tags);
 
     try {
